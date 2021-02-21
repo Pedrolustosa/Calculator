@@ -8,7 +8,6 @@ namespace Calculator
         {
             Multiplication();
         }
-
         static void Sum()
         {
             Console.Clear();
@@ -25,7 +24,6 @@ namespace Calculator
             // Console.WriteLine("O resultado da soma é: " + (v1 + v2));
             Console.ReadKey();
         }
-
         static void Subtration()
         {
             Console.Clear();
@@ -42,7 +40,6 @@ namespace Calculator
             Console.WriteLine($"O resultado da subtração é: {resultado}");
             Console.ReadKey();
         }
-
         static void Division()
         {
             Console.Clear();
@@ -60,7 +57,6 @@ namespace Calculator
             Console.WriteLine($"O Valor da divisão é: {resultado}");
             Console.ReadKey();
         }
-
         static void Multiplication()
         {
             Console.Clear();
