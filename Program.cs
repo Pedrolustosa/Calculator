@@ -38,6 +38,9 @@ namespace Calculator
                 case 4:
                     Multiplication();
                     break;
+                case 5:
+                    Exit();
+                    break;
                 default:
                     Menu();
                     break;
@@ -52,10 +55,7 @@ namespace Calculator
             float v2 = float.Parse(Console.ReadLine());
 
             float resultado = v1 + v2;
-            // Console.WriteLine("O resultado da soma é: " + resultado);
             Console.WriteLine($"The result of the sum is: {resultado}");
-            // Console.WriteLine($"O resultado da soma é: {v1 + v2}");
-            // Console.WriteLine("O resultado da soma é: " + (v1 + v2));
             Console.ReadKey();
             Menu();
         }
@@ -113,6 +113,19 @@ namespace Calculator
             Menu();
 
         }
-
+        static void Exit()
+        {
+            Console.WriteLine("1 - Exit | 2 - Return");
+            short yes = short.Parse(Console.ReadLine());
+            if (yes == 1)
+            {
+                Console.WriteLine("See you later");
+                System.Environment.Exit(0);
+            }
+            else
+            {
+                Menu();
+            }
+        }
     }
 }
